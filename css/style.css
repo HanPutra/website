@@ -1,0 +1,332 @@
+/* ==  Fonts  == */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+    url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/BebasNeue-Regular.woff2') format('woff2'),
+    url('../fontsBebasNeue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*==========*//*==========*//*==========*/
+
+/* ==  Style Dasar  == */
+html, body {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+
+
+/* ==  Utility  == */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========*//*==========*//*==========*/
+
+/* Navbar */
+
+.navbar {
+    background-image: linear-gradient(to right, #f5af19, #f12711);
+}
+.navbar-brand {
+    font-family: 'bebas_neueregular', Sans-Serif, Arial;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+.nav-link, .dropdown-item {
+    text-transform: uppercase;
+}
+.navbar-collapse {
+    background-image: linear-gradient(to right, #F4A918, #F22C12);
+    border-radius: 5px;
+    border: 1px solid white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.navbar-collapse li {
+    padding-left: 25px;
+}
+.dropdown-menu {
+    background-image: linear-gradient(to right, #F4A918, #F22C12);
+    border: 1px solid white;
+    margin-left: -25px;
+}
+.dropdown-item {
+    color: white;
+}
+
+/* Akhir Navbar */
+
+
+/* Main / Utama */
+.utama {
+    background-image: linear-gradient(to right, #f5af19, #f12711);
+    min-height: 50%;
+    width: 100%;
+    position: relative;
+    color: white;
+    margin-top: 70px;
+
+}
+.utama::after {
+    content: '';
+    background-image: url('../img/wave-red-bottom-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -20vh;
+    left: 0;
+    height: 20vh;
+    width: 100%;
+}
+.utama h1 {
+    text-transform: uppercase;
+    margin-top: 20%;
+    font-family: 'bebas_neueregular', Sans-Serif, Arial;
+    font-size: 48px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+.utama figure img {
+    width: 30vmin;
+    height: 30vmin;
+    background-color: white;
+    box-shadow: 0px 0px 1px rgba(0,0,0,.6);
+}
+
+/* Akhir Main / Utama */
+
+
+/* SlideShow */
+.slide {
+    height: 20%;
+    background-image: url('../img/cloud-bg.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+.slide .carousel-inner .carousel-item img {
+    margin: 20vh auto 20%;
+    box-shadow: 0 0 1px rgba(0,0,0,.6);
+    width: 40%;
+}
+.slide .carousel-inner .carousel-item .carousel-caption h5 {
+    font-family: 'bebas_neueregular', Sans-Serif, Arial;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.9);
+    font-size: 24px;
+}
+
+/* Akhir SlideShow */
+
+
+/* First Content */
+.first-content {
+    background-image: linear-gradient(to right, #414345, #232526);
+    position: relative;
+    min-height: 50%;
+}
+.first-content::before {
+    content: '';
+    background-image: url('../img/wave-black-top-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 20vh;
+    top: -15vh;
+}
+.first-content::after {
+    content: '';
+    background-image: url('../img/wave-black-bottom-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -20vh;
+    left: 0;
+    right: 0;
+    height: 20vh;
+    width: 100%;
+}
+.first-content .isi {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom right, #12c2e9, #c471ed, #f64f59);
+    padding: 5%;
+    font-family: 'open_sansregular', Sans-Serif, Arial;
+    color: white;
+}
+/* Akhir First Content */
+
+
+/* Sponcored First Content */
+.sponcored {
+    background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+}
+/* Akhir Sponcored First Content */
+
+
+/* Last Content */
+.last-content {
+    background-image: linear-gradient(to right, #414345, #232526);
+    position: relative;
+    min-height: 50%;
+    max-height: 200%;
+}
+.last-content::before {
+    content: '';
+    background-image: url('../img/wave-black-top-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 20vh;
+    top: -15vh;
+}
+
+.last-content .isi {
+    background-image: linear-gradient(to bottom right, #12c2e9, #c471ed, #f64f59);
+    margin-top: 20%;
+    margin-bottom: 20%;
+    border-radius: 25px;
+    color: white;
+    padding: 5%;
+    font-family: 'open_sansregular', Sans-Serif, Arial;
+}
+
+/* Akhir Last Content */
+
+
+/* Footer */
+.footer {
+    font-family: 'open_sansregular', Sans-Serif, Arial;
+    margin-top: -1px;
+    background-color: #303030;
+    color: white;
+}
+.footer .pfooter {
+    margin-top: 10%;
+}
+.footer span {
+    color: red;
+}
+/* Akhir Footer */
+
+
+
+
+
+
+
+/*==========*//*==========*//*==========*/
+
+/* ==  Responsive  == */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    html, body {
+        width: 100%;
+        min-height: 100%;
+    }
+
+
+    /* NavBar */
+    .navbar {
+        border-bottom: 1px solid white;
+    }
+    .navbar-collapse {
+        background-image: linear-gradient(to right, #F49C17, #F12910);
+        border-radius: 0px;
+        border: none;
+    }
+    .dropdown-menu {
+        background-image: linear-gradient(to right, #F25E14, #F13E13);
+        border: 1px solid white;
+    }
+    .navbar-collapse li {
+        padding-left: auto;
+    }
+    .dropdown-menu {
+        margin-left: 0px;
+    }
+    /* Akhir Navbar */
+
+
+    /*  Main / Utama  */
+    .utama h1 {
+        font-size: 72px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,.8);
+    }
+    .utama figure img {
+        box-shadow: 0px 0px 3px rgba(0,0,0,.8);
+    }
+    /*  Akhir Main / Utama  */
+
+
+    /*  SlideShow  */
+    .slide .carousel-inner .carousel-item .carousel-caption h5 {
+        font-size: 48px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,.8),
+        -1px -1px 3px rgba(0,0,0,.8);
+    }
+    /*  Akhir SlideShow  */
+
+
+    /* First Content */
+    .first-content p {
+        font-size: 24px;
+    }
+    /* Akhir First Content */
+
+
+    /* Sponcored first Content*/
+    .sponcored .carousel-inner .carousel-item .carousel-caption h5 {
+        text-shadow: 1px 1px 3px rgba(0,0,0,.8),
+        -1px -1px 3px rgba(0,0,0,.8);
+    }
+    .sponcored .carousel-inner .carousel-item img {
+        margin-bottom: 15%;
+    }
+    /* Akhir Sponcored first Content*/
+
+
+    /* Last Content */
+    .last-content p {
+        font-size: 24px;
+    }
+    /* Akhir Last Content */
+
+
+    /* Footer */
+    .footer .pfooter {
+        font-size: 24px;
+    }
+    /* Akhir Footer */
+
+
+
+
+}
